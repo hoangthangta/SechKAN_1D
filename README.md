@@ -82,11 +82,11 @@ For the complete experimental settings, please refer to these shell scripts.
 The following command-line parameters are shared across the three experiment scripts.
 
 * `--model`: Select the model to train. Available options are `mlp`, `cnn_1d`, `resnet_1d`, `ds_cnn_1d`, `sech_kan`, and `efficient_kan`.
-* `--data_root`: Root directory containing the datasets. Default: `./data`.
-* `--note`: Optional note or identifier for the experiment run. Default: empty string.
-* `--val_subject_fraction`: Fraction of subjects used for validation when subject-level validation is applicable. Default: `0.2`.
+* `--data_root`: Root directory containing the datasets. Default: `./data`. Used in the HAR script.
+* `--note`: Optional note or identifier for the experiment run. Default: `""`. May vary by script.
+* `--val_subject_fraction`: Fraction of subjects used for validation when subject-level validation is applicable. Default: `0.2`. Used in the HAR script.
 * `--batch_size`: Training batch size. Default: `64`.
-* `--epochs`: Number of training epochs. Default: `20`.
+* `--epochs`: Number of training epochs. Default: `20` for HAR and the first parser, and `30` in the third parser.
 * `--hidden_layers`: Hidden-layer configuration of the model. Default: `"256"`.
 * `--lr`: Learning rate. Default: `1e-3`.
 * `--weight_decay`: Weight decay used by the optimizer. Default: `1e-4`.
@@ -94,14 +94,14 @@ The following command-line parameters are shared across the three experiment scr
 * `--ratio`: Dimensionality-reduction ratio used by the pairwise reduction mechanism. Default: `2`.
 * `--pairwise_fn`: Pairwise function used for feature reduction. Default: `atan`.
 * `--pairing`: Feature-pairing strategy. Available options are `original`, `shuffle`, and `reverse`. Default: `original`.
-* `--pair_type`: Pairwise reduction operation. Default: `raw_weighted_sum_product`.
-* `--norm1_type`: Normalization type used in the first normalization stage. Default: empty.
-* `--norm2_type`: Normalization type used in the second normalization stage. Default: `layer`.
+* `--pair_type`: Pairwise reduction operation. Default: `raw_weighted_sum_product` in the HAR script and `weighted_sum_product` in the third parser.
+* `--norm1_type`: Normalization type used in the first normalization stage. Default varies by script: `""` in HAR and `layer` in the other parsers.
+* `--norm2_type`: Normalization type used in the second normalization stage. Default varies by script: `layer` in HAR and `""` in the other parsers.
 * `--norm_mode`: Specifies where normalization is applied. Available options are `none`, `first`, `except_first`, and `all`. Default: `all`.
 * `--norm_type`: General normalization type used by models that require this setting. Default: `layer`.
 * `--activation`: Activation function used by the model. Default: `silu`.
 * `--num_workers`: Number of workers used for data loading. Default: `4`.
-* `--seed`: Random seed used for reproducibility. Default: `42`.
+* `--seed`: Random seed used for reproducibility. Default varies by script: `42` in HAR and `0` in the other parsers.
 * `--device`: Computing device. Default: `cuda`.
 * `--num_grids`: Number of grid points used by SechKAN. Default: `4`.
 
