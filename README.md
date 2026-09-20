@@ -91,10 +91,6 @@ The following command-line parameters are shared across the three experiment scr
 * `--lr`: Learning rate. Default: `1e-3`.
 * `--weight_decay`: Weight decay used by the optimizer. Default: `1e-4`.
 * `--scheduler`: Learning-rate scheduler. Available options are `StepLR`, `CosineAnnealingLR`, `OneCycleLR`, `ExponentialLR`, and `CyclicLR`. Default: `OneCycleLR`.
-* `--ratio`: Dimensionality-reduction ratio used by the pairwise reduction mechanism. Default: `2`.
-* `--pairwise_fn`: Pairwise function used for feature reduction. Default: `atan`.
-* `--pairing`: Feature-pairing strategy. Available options are `original`, `shuffle`, and `reverse`. Default: `original`.
-* `--pair_type`: Pairwise reduction operation. Default: `raw_weighted_sum_product` in the HAR script and `weighted_sum_product` in the third parser.
 * `--norm1_type`: Normalization type used in the first normalization stage. Default varies by script: `""` in HAR and `layer` in the other parsers.
 * `--norm2_type`: Normalization type used in the second normalization stage. Default varies by script: `layer` in HAR and `""` in the other parsers.
 * `--norm_mode`: Specifies where normalization is applied. Available options are `none`, `first`, `except_first`, and `all`. Default: `all`.
