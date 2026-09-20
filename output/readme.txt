@@ -1,1 +1,1 @@
-The *.zip file contains the results.
+The *.rar files contain the results.
