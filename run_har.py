@@ -499,4 +499,3 @@ if __name__ == "__main__":
 # python run_har.py --model "ds_cnn_1d" --batch_size 64 --epochs 20 --scheduler "OneCycleLR" --seed 0 --note "run_0"
 
 # python run_har.py --model "efficient_kan" --batch_size 64 --epochs 20 --scheduler "OneCycleLR" --seed 0 --note "run_0"
-# python run_har.py --model "lstm_1d" --batch_size 64 --epochs 20 --scheduler "OneCycleLR" --seed 0 --note "run_0"
