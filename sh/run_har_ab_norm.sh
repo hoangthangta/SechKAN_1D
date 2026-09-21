@@ -1,0 +1,32 @@
+python run_har.py --model "sech_kan" --num_grids 4 --hidden_layers "256" --batch_size 64 --epochs 20 --norm1_type "" --norm2_type "" --norm_mode "all" --activation "silu" --scheduler "OneCycleLR" --seed 0 --note "run_norm_none__0";
+sleep 5s;
+python run_har.py --model "sech_kan" --num_grids 4 --hidden_layers "256" --batch_size 64 --epochs 20 --norm1_type "layer" --norm2_type "" --norm_mode "all" --activation "silu" --scheduler "OneCycleLR" --seed 0 --note "run_norm1_layer__0";
+sleep 5s;
+python run_har.py --model "sech_kan" --num_grids 4 --hidden_layers "256" --batch_size 64 --epochs 20 --norm1_type "batch" --norm2_type "" --norm_mode "all" --activation "silu" --scheduler "OneCycleLR" --seed 0 --note "run_norm1_batch__0";
+sleep 5s;
+python run_har.py --model "sech_kan" --num_grids 4 --hidden_layers "256" --batch_size 64 --epochs 20 --norm1_type "" --norm2_type "layer" --norm_mode "all" --activation "silu" --scheduler "OneCycleLR" --seed 0 --note "run_norm2_layer__0";
+sleep 5s;
+python run_har.py --model "sech_kan" --num_grids 4 --hidden_layers "256" --batch_size 64 --epochs 20 --norm1_type "" --norm2_type "batch" --norm_mode "all" --activation "silu" --scheduler "OneCycleLR" --seed 0 --note "run_norm2_batch__0";
+sleep 5s;
+
+python run_har.py --model "sech_kan" --num_grids 4 --hidden_layers "256" --batch_size 64 --epochs 20 --norm1_type "" --norm2_type "" --norm_mode "all" --activation "silu" --scheduler "OneCycleLR" --seed 1 --note "run_norm_none__1";
+sleep 5s;
+python run_har.py --model "sech_kan" --num_grids 4 --hidden_layers "256" --batch_size 64 --epochs 20 --norm1_type "layer" --norm2_type "" --norm_mode "all" --activation "silu" --scheduler "OneCycleLR" --seed 1 --note "run_norm1_layer__1";
+sleep 5s;
+python run_har.py --model "sech_kan" --num_grids 4 --hidden_layers "256" --batch_size 64 --epochs 20 --norm1_type "batch" --norm2_type "" --norm_mode "all" --activation "silu" --scheduler "OneCycleLR" --seed 1 --note "run_norm1_batch__1";
+sleep 5s;
+python run_har.py --model "sech_kan" --num_grids 4 --hidden_layers "256" --batch_size 64 --epochs 20 --norm1_type "" --norm2_type "layer" --norm_mode "all" --activation "silu" --scheduler "OneCycleLR" --seed 1 --note "run_norm2_layer__1";
+sleep 5s;
+python run_har.py --model "sech_kan" --num_grids 4 --hidden_layers "256" --batch_size 64 --epochs 20 --norm1_type "" --norm2_type "batch" --norm_mode "all" --activation "silu" --scheduler "OneCycleLR" --seed 1 --note "run_norm2_batch__1";
+sleep 5s;
+
+python run_har.py --model "sech_kan" --num_grids 4 --hidden_layers "256" --batch_size 64 --epochs 20 --norm1_type "" --norm2_type "" --norm_mode "all" --activation "silu" --scheduler "OneCycleLR" --seed 2 --note "run_norm_none__2";
+sleep 5s;
+python run_har.py --model "sech_kan" --num_grids 4 --hidden_layers "256" --batch_size 64 --epochs 20 --norm1_type "layer" --norm2_type "" --norm_mode "all" --activation "silu" --scheduler "OneCycleLR" --seed 2 --note "run_norm1_layer__2";
+sleep 5s;
+python run_har.py --model "sech_kan" --num_grids 4 --hidden_layers "256" --batch_size 64 --epochs 20 --norm1_type "batch" --norm2_type "" --norm_mode "all" --activation "silu" --scheduler "OneCycleLR" --seed 2 --note "run_norm1_batch__2";
+sleep 5s;
+python run_har.py --model "sech_kan" --num_grids 4 --hidden_layers "256" --batch_size 64 --epochs 20 --norm1_type "" --norm2_type "layer" --norm_mode "all" --activation "silu" --scheduler "OneCycleLR" --seed 2 --note "run_norm2_layer__2";
+sleep 5s;
+python run_har.py --model "sech_kan" --num_grids 4 --hidden_layers "256" --batch_size 64 --epochs 20 --norm1_type "" --norm2_type "batch" --norm_mode "all" --activation "silu" --scheduler "OneCycleLR" --seed 2 --note "run_norm2_batch__2";
+sleep 5s;
