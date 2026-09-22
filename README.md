@@ -4,7 +4,7 @@ Official implementation for the paper:
 
 > **Evaluating the Effectiveness of SechKAN on 1D Data**, submitted to [SOICT 2026](https://soict.org/).
 
-This repository provides the code and experimental configurations for evaluating **SechKAN** on one-dimensional classification datasets. The experiments compare SechKAN with conventional neural networks, 1D convolutional architectures, and other KAN-based models.
+This repository provides the code and experimental configurations for evaluating **[SechKAN](https://github.com/hoangthangta/All-KAN/tree/main/SechKAN)** on one-dimensional classification datasets. The experiments compare SechKAN with conventional neural networks, 1D convolutional architectures, and other KAN-based models.
 
 ## Overview
 
