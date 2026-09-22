@@ -27,8 +27,13 @@ SechKAN_1D/
 ├── data/
 │   └── ...                         # Dataset files
 │
-├── models/
-│   ├── ...                         # Model implementations
+├── cnn_1d.py
+├── ds_cnn_1d.py
+├── resnet_1d.py
+├── sech_kan.py
+├── mlp.py
+├── efficient_kan.py
+├── ...
 │
 ├── run_har.py                      # UCI HAR experiments
 ├── run_crop.py                     # Crop experiments
