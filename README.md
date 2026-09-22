@@ -27,7 +27,7 @@ SechKAN_1D/
 ├── data/
 │   └── ...                         # Dataset files
 │
-├── cnn_1d.py
+├── cnn_1d.py                       # Model files
 ├── ds_cnn_1d.py
 ├── resnet_1d.py
 ├── sech_kan.py
